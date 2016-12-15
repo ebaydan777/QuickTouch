@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_feedback"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".FeedbackActivity"
+    android:background="@android:color/black">
+
+    <TextView
+        android:text="First Name:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:id="@+id/textName"
+        android:textSize="30sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/editTextName"
+        android:layout_alignStart="@+id/editTextName" />
+
+    <TextView
+        android:text="Leave Feedback:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:id="@+id/textView3"
+        android:textSize="30sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_below="@+id/editTextEmail"
+        android:layout_alignLeft="@+id/editTextFeedback"
+        android:layout_alignStart="@+id/editTextFeedback" />
+
+    <Button
+        android:text="Send!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonSend"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Email:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:id="@+id/textEmail"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="30sp"
+        android:layout_below="@+id/editTextName"
+        android:layout_alignLeft="@+id/editTextEmail"
+        android:layout_alignStart="@+id/editTextEmail" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editTextFeedback"
+        android:background="@android:color/background_light"
+        android:textSize="26sp"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:gravity="top|left|center_vertical" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editTextName"
+        android:background="@android:color/background_light"
+        android:textSize="26sp"
+        android:layout_below="@+id/textName"
+        android:layout_alignLeft="@+id/textEmail"
+        android:layout_alignStart="@+id/textEmail" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editTextEmail"
+        android:textColor="@android:color/black"
+        android:background="@android:color/background_light"
+        android:textSize="26sp"
+        android:layout_below="@+id/textEmail"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+</RelativeLayout>

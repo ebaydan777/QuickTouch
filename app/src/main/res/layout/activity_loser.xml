@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_loser"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.mesa.quicktouch.Loser"
+    android:background="@android:color/black">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/nuke"
+        android:layout_above="@+id/buttonMenu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="157dp"
+        android:id="@+id/imageView" />
+
+    <TextView
+        android:text="Score: 999"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:id="@+id/textViewScore"
+        android:textSize="18sp"
+        android:layout_above="@+id/buttonMenu"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:text="Main Menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:id="@+id/buttonMenu"
+        android:background="@android:color/transparent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Try Again!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:id="@+id/textViewTryAgain"
+        android:textSize="36sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:fontFamily="cursive"
+        android:layout_above="@+id/textViewScore"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
